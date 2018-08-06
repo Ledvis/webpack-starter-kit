@@ -1,0 +1,18 @@
+@import "node_modules/normalize-scss/sass/normalize/import-now";
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1.2;
+}
+
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}

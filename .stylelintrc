@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-idiomatic-order",
+    "./node_modules/prettier-stylelint/config.js"
+  ],
+  "ignoreFiles": "**/*.{vue, html, js}",
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": [
+        "mixin",
+        "include",
+        "function",
+        "return",
+        "if",
+        "else",
+        "content"
+      ]
+    }],
+    "indentation": "space",
+    "number-leading-zero": null,
+    "unit-whitelist": ["px", "%"]
+  }
+}
