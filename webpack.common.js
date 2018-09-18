@@ -38,19 +38,16 @@ module.exports = {
           loader: 'postcss-loader',
           options: {
             sourceMap: true,
-            plugins() {
-              return [autoprefixer('last 2 version')];
-            },
           },
+        },
+        {
+          loader: 'resolve-url-loader',
         },
         {
           loader: 'sass-loader',
           options: {
             sourceMap: true,
           },
-        },
-        {
-          loader: 'resolve-url-loader',
         },
         ],
       }),
